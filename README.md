@@ -43,8 +43,8 @@ sudo mkdir -p /etc/systemd/system/docker.service.d
 Add the following lines to `/etc/systemd/system/docker.service.d/http-proxy.conf`:
 
 ```
-
-
+[Service]
+Environment="HTTPS_PROXY=http://fodev.org:8118"
 ```
 
 ```shell
