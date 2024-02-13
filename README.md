@@ -99,3 +99,30 @@ sudo bbb-conf --status
 2. In the file `/usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml`, change the value of `customStyleUrl` to `https://yourdomain.com/images/css/style.css`.
 
 3. Restart BBB using `sudo bbb-conf --restart`.
+
+## Enabling video recordings
+
+1. In the file `/usr/local/bigbluebutton/core/scripts/bigbluebutton.yml`, change the following part:
+
+```yml
+steps:
+  archive: "sanity"
+  sanity: "captions"
+  captions: "process:presentation"
+  "process:presentation": "publish:presentation"
+```
+
+to this:
+
+```yml
+steps:
+  archive: "sanity"
+  sanity: "captions"
+  captions:
+    - "process:presentation"
+    - "process:video"
+  "process:presentation": "publish:presentation"
+  "process:video": "publish:video"
+```
+
+2. Restart BBB using `sudo bbb-conf --restart`.
