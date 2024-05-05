@@ -126,3 +126,11 @@ steps:
 ```
 
 2. Restart BBB using `sudo bbb-conf --restart`.
+
+## Keep learning dashboard data permanently
+
+1, Add the following line to `/etc/bigbluebutton/bbb-web.properties`:
+
+`learningDashboardCleanupDelayInMinutes=0`
+
+2. Restart BBB using `sudo bbb-conf --restart`.
