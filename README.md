@@ -74,7 +74,7 @@ sudo bbb-conf --status
 
 ## Changing the default locale to Persian
 
-1. In the file `/usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml`, change the value of `overrideLocale` to `fa_IR`.
+1. In the file `/usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml`, change the value of `overrideLocale` to `fa-IR`.
 
 2. Restart BBB using `sudo bbb-conf --restart`.
 
