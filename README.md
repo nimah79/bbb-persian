@@ -74,7 +74,7 @@ sudo bbb-conf --status
 
 ## Changing the default locale to Persian
 
-1. In the file `/usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml`, change the value of `overrideLocale` to `fa-IR`.
+1. In the file `/usr/share/bigbluebutton/html5-client/private/config/settings.yml`, change the value of `overrideLocale` to `fa-IR`.
 
 2. Restart BBB using `sudo bbb-conf --restart`.
 
@@ -96,7 +96,7 @@ sudo bbb-conf --status
 
 1. Upload font files and styles to `/var/www/bigbluebutton-default/assets/images` such that the `/var/www/bigbluebutton-default/assets/images/css/style.css` should exist.
 
-2. In the file `/usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml`, change the value of `customStyleUrl` to `https://yourdomain.com/images/css/style.css`.
+2. In the file `/usr/share/bigbluebutton/html5-client/private/config/settings.yml`, change the value of `customStyleUrl` to `https://yourdomain.com/images/css/style.css`.
 
 3. Restart BBB using `sudo bbb-conf --restart`.
 
